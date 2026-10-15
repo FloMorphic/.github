@@ -14,6 +14,10 @@ low-code, on the [Inflowenger](https://inflowenger.com) context runtime you own.
 [**Blog**](https://inflowenger.com/blog) ·
 [**Cookbook**](https://github.com/FloMorphic/flow-cookbook)
 
+![The FloMorphic canvas — an AI Decision node routing a support ticket across typed branches](images/canvas-ai-decision.png)
+
+<sub>One canvas: capabilities are nodes, edges are the decisions the model is allowed to make.</sub>
+
 </div>
 
 ---
@@ -63,6 +67,13 @@ MCP nodes, is built from them or plugged in.
 > **Not a product. An opportunity.** FloMorphic isn't sold as the finished answer to your
 > problem — it's the means to build your own.
 
+## On the canvas
+
+| Human-in-the-loop | Typed triage routing |
+| --- | --- |
+| [![A Claude agent node that parks the flow and asks a human before continuing](images/canvas-human-in-the-loop.png)](images/canvas-human-in-the-loop.png) | [![An AI Decision node routing a support ticket into typed branches](images/canvas-triage-routing.png)](images/canvas-triage-routing.png) |
+| A model turn that pauses on `ask` and resumes when a person answers. | One decision node fanning a ticket out to typed outbound ports. |
+
 ## Try it in one command
 
 ```bash
@@ -89,7 +100,7 @@ Docker is the only prerequisite. The canvas comes up on `http://localhost:8088`.
 | [**flow-cookbook**](https://github.com/FloMorphic/flow-cookbook) | Worked flows you can import and run — eval loops, RAG, re-embedding a knowledge base, fleet audits. |
 | [**morph-wapp**](https://github.com/FloMorphic/morph-wapp) | The canvas: Vue 3 + Vue Flow + TypeScript. |
 | [**morph-api**](https://github.com/FloMorphic/morph-api) | The backend: Go + Fiber, SQLite + sqlite-vec, the graph compiler, and the `/mcp` endpoint. |
-| [**builtin-plugins**](https://github.com/FloMorphic/builtin-plugins) | The stock plugin nodes — `llm`, `mcp`, `http`, `cast`, `jev` — ordinary Go binaries you can copy. |
+| [**builtin-plugins**](https://github.com/FloMorphic/builtin-plugins) | The stock plugin nodes — `llm`, `mcp`, `http`, `cast`, `ai-decision` — ordinary Go binaries you can copy. |
 
 ## Learn more
 
